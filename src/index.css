@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+:root {
+  --main-color: #101522;
+  --button-color: #4b56f7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__padding {
+  padding: 1rem 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.custom__button {
+  margin-top: 2rem;
+  width: fit-content;
+  border: none;
+  border-radius: 10px;
+  padding: 1.2rem 4rem;
+
+  background-color: var(--button-color);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.custom__button:hover {
+  transform: scale(1.02);
+  background-color: rgb(61, 61, 250);
+}
+.mobile__custom_button {
+  margin-top: 3rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  background-color: var(--button-color);
+  color: white;
+  text-align: center;
+  width: 90%;
+  font-weight: bold;
+  font-size: 15px;
+}
+.flex {
+  display: flex;
+}
+
+.nav__button {
+  color: white;
+  padding: 0.8rem 1.5rem;
+  background-color: aqua;
+  border-radius: 10px;
+  border: 0;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 680px) {
+  .section__padding {
+    padding: 1rem 3rem;
+  }
+}
